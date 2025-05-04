@@ -1,0 +1,15 @@
+pydantic==2.5.3
+numpy==1.24.3
+style-bert-vits2
+soundfile
+librosa
+anyio
+fastapi
+uvicorn[standard]
+python-dotenv
+openai
+llama-cpp-python
+torch==2.1.2+cu118
+torchvision==0.16.2+cu118
+torchaudio==2.1.2+cu118
+pydantic-settings 
