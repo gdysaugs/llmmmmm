@@ -50,6 +50,10 @@ Stylebert/
 │   │       ├── Anneli-nsfw_e300_s5100.safetensors
 │   │       ├── config.json
 │   │       └── style_vectors.npy
+│   │    *   **注意:** 大容量モデル `models/Berghof-NSFW-7B.i1-IQ4_XS.gguf` (4.0GB) は、Git LFS の 2GB 制限を超えるため、リポジトリには含まれていません。
+│   │        以下の Hugging Face リポジトリから手動でダウンロードし、`models/` ディレクトリ直下に配置してください。
+│   │        *   ダウンロード元: [https://huggingface.co/mradermacher/Berghof-NSFW-7B-i1-GGUF](https://huggingface.co/mradermacher/Berghof-NSFW-7B-i1-GGUF)
+│   │        *   ダウンロードするファイル: `Berghof-NSFW-7B.i1-IQ4_XS.gguf`
 │   ├── output/          # 生成された音声ファイルの一時保存/配信元
 │   ├── requirements.txt # Python 依存関係
 │   ├── Dockerfile       # Python, FastAPI, StyleBERT, GPU 対応イメージビルド
