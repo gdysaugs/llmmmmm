@@ -1,0 +1,16 @@
+version: "3.9"
+services:
+  sadtalker:
+    build: .
+    image: sadtalker:latest
+    container_name: sadtalker
+    runtime: nvidia
+    environment:
+      - NVIDIA_VISIBLE_DEVICES=all
+    volumes:
+      - ./testdata:/workspace/SadTalker/testdata
+      - ./checkpoints:/workspace/SadTalker/checkpoints
+      - ./gfpgan/weights:/workspace/SadTalker/gfpgan/weights
+      - ./results:/workspace/SadTalker/results
+    working_dir: /workspace/SadTalker
+    tty: true 
